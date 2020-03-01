@@ -24,3 +24,6 @@ WIN_COMBINATIONS.detect do |win_combination|
   board[location1] == board[location2] && board[location2] == board[location3] && board[location1] != " "
 end
 end
+
+def full?(board)
+  board.none? |position| position = " "
