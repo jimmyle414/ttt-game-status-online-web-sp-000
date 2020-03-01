@@ -17,6 +17,10 @@ WIN_COMBINATIONS = [
   ]
 
 def won?(board)
+WIN_COMBINATIONS.detect do |win_combination|
+  location1 = win_combination[0]
+  location2 = win_combination[1]
+  location3 = win_combination[2]
   board[location1] == board[location2] && board[location2] == board[location3] && board[location1] != " "
 end
 end
