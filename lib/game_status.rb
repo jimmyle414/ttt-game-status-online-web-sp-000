@@ -26,4 +26,4 @@ end
 end
 
 def full?(board)
-  board.none? |position| position = " "
+  board.none? {|position| position = " "}
