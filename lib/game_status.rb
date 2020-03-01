@@ -40,6 +40,8 @@ end
 def winner(board)
   win_combination = won?(board)
   if win_combination
+    winning_location = winning_location[0]
+    
     
   
   
