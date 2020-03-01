@@ -38,5 +38,6 @@ def over?(board)
 end
 
 def winner(board)
-  win_combination
+  win_combination = won?(board)
+  
   
